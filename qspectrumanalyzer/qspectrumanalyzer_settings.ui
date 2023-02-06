@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QSpectrumAnalyzerSettings</class>
+ <widget class="QDialog" name="QSpectrumAnalyzerSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings - QSpectrumAnalyzer</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>&amp;Backend:</string>
+       </property>
+       <property name="buddy">
+        <cstring>backendComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="backendComboBox">
+       <item>
+        <property name="text">
+         <string>soapy_power</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>rx_power</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>rtl_power_fftw</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>rtl_power</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>hackrf_sweep</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>E&amp;xecutable:</string>
+       </property>
+       <property name="buddy">
+        <cstring>executableEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="executableEdit">
+         <property name="text">
+          <string>soapy_power</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="executableButton">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>&amp;Device:</string>
+       </property>
+       <property name="buddy">
+        <cstring>deviceEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Sa&amp;mple rate:</string>
+       </property>
+       <property name="buddy">
+        <cstring>sampleRateSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>&amp;Waterfall history size:</string>
+       </property>
+       <property name="buddy">
+        <cstring>waterfallHistorySizeSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QSpinBox" name="waterfallHistorySizeSpinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10000000</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Bandwidt&amp;h:</string>
+       </property>
+       <property name="buddy">
+        <cstring>bandwidthSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="toolTip">
+        <string>Negative frequency for upconverters, positive frequency for downconverters.</string>
+       </property>
+       <property name="text">
+        <string>&amp;LNB LO:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lnbSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Add&amp;itional parameters:</string>
+       </property>
+       <property name="buddy">
+        <cstring>paramsEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="paramsEdit"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="paramsHelpButton">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string> ? </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="deviceEdit"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="deviceHelpButton">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string> ? </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="sampleRateSpinBox">
+       <property name="showGroupSeparator" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="suffix">
+        <string> MHz</string>
+       </property>
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>999999.989999999990687</double>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="value">
+        <double>61.439999999999998</double>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="bandwidthSpinBox">
+       <property name="showGroupSeparator" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="suffix">
+        <string> MHz</string>
+       </property>
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>999999.989999999990687</double>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QDoubleSpinBox" name="lnbSpinBox">
+       <property name="toolTip">
+        <string>Negative frequency for upconverters, positive frequency for downconverters.</string>
+       </property>
+       <property name="showGroupSeparator" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="suffix">
+        <string> MHz</string>
+       </property>
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>-999999.998999999952503</double>
+       </property>
+       <property name="maximum">
+        <double>999999.998999999952503</double>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>21</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>backendComboBox</tabstop>
+  <tabstop>executableEdit</tabstop>
+  <tabstop>executableButton</tabstop>
+  <tabstop>paramsEdit</tabstop>
+  <tabstop>paramsHelpButton</tabstop>
+  <tabstop>deviceEdit</tabstop>
+  <tabstop>deviceHelpButton</tabstop>
+  <tabstop>sampleRateSpinBox</tabstop>
+  <tabstop>bandwidthSpinBox</tabstop>
+  <tabstop>lnbSpinBox</tabstop>
+  <tabstop>waterfallHistorySizeSpinBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>QSpectrumAnalyzerSettings</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>QSpectrumAnalyzerSettings</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
